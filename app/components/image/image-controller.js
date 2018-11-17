@@ -3,15 +3,15 @@ import ImageService from "./image-service.js"
 
 let is = new ImageService
 
-function drawImage() {
-  // let image = is.getImage  dont do this
+
+function drawImage(imgArr) {
+  let index = Math.floor(Math.random() * 41)
+  document.body.style.backgroundImage = `url(${imgArr[index].url})`
 }
 
 export default class ImageController {
   constructor() {
-    console.log('hello from image controller')
     is.getImage(drawImage)
   }
-  // 
 }
 

@@ -1,0 +1,17 @@
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card   {
+  background: rgba(127, 141, 145, 0.536);
+  box-shadow: 1px 3px 1px 3px; 
+}
+
+.strike-out   {
+  text-decoration: line-through;
+}
+
+.form-group {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -7,7 +7,7 @@ function _drawWeather(wData) {
 	let fTemp = Math.ceil((kTemp * (9 / 5)) - 459.67);
 	let template = `
 	<div class="col-3 offset-9">
-		<h3>${fTemp}°</h3>
+		<h3 style="text-shadow: 0px 0px 3px whitesmoke;"><strong>${fTemp}°</strong></h3>
 	</div>
 	`
 	document.getElementById("weather").innerHTML = template

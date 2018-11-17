@@ -16,7 +16,7 @@ function draw(todos) {
 	var template = ''
 	todos.forEach(todo => {
 		template += `
-		<div class="col-4">
+		<div class="col-3">
 			<div class="card">
 				<div class="card-body">
 					<h4 class="${todo.completed ? "strike-out" : ''}">${todo.description}</h4>
