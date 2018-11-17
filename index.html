@@ -3,23 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Inspire</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body id="body">
-	<div id="weather">
-		Your Weather Template
-	</div>
+	<div class="container">
+		<div id="weather" class="row">
+			Your Weather Template
+		</div>
 
-	<div id="quote">
-		The Quote
-	</div>
+		<div id="quote" class="row">
+			The Quote
+		</div>
 
-	<div id="todo">
-		<form onsubmit=""></form>
-		A Todo List
+		<div class="row">
+			<div class="col-12">
+				<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+					<div class="form-group">
+						<label for="">TO DO LIST:</label>
+						<input type="text" name="description">
+					</div>
+				</form>
+				<div id="todo" class="row"></div>
+			</div>
+		</div>
 	</div>
-
 
 
 
