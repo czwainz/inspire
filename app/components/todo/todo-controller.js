@@ -19,8 +19,7 @@ function draw(todos) {
 		<div class="col-3">
 			<div class="card">
 				<div class="card-body">
-					<h4 class="${todo.completed ? "strike-out" : ''}">${todo.description}</h4>
-					<input type="checkbox" ${todo.completed ? "checked" : ''} name="todo" id="${todo._id}" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')">
+					<h4 class="${todo.completed ? "strike-out" : ''}"> <input type="checkbox" ${todo.completed ? "checked" : ''} name="todo" id="${todo._id}" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')"> ${todo.description}</h4>
 					<button onclick="app.controllers.todoController.removeTodo('${todo._id}')" class="trashcan"><i class="fas fa-trash-alt"></i></button>
 				</div>
 			</div>
@@ -70,7 +69,5 @@ export default class TodoController {
 		todoService.removeTodo(todoId, getTodos)
 		// ^^^^ THIS LINE OF CODE PROBABLY LOOKS VERY SIMILAR TO THE toggleTodoStatus
 	}
-
-
 
 }

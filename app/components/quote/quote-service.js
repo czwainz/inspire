@@ -9,7 +9,6 @@ const quoteApi = axios.create({
 	timeout: 3000
 });
 
-
 export default class QuoteService {
 	getQuote(callWhenDone) {
 		console.log('looking for some good quotes')

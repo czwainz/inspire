@@ -12,6 +12,27 @@ body{
   text-decoration: line-through;
 }
 
-.form-group {
+.form-control {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 0px 0px 3px grey;
 }
+
+.todo-cards  {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#quote {
+  font-family: cursive;
+  text-shadow: 0px 0px 3px whitesmoke;
+}
+/* 
+.copyright {
+  display: none;
+}
+
+h6:hover + .copyright{
+  display: block;
+} */

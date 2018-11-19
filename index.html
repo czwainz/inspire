@@ -11,26 +11,29 @@
 </head>
 
 <body id="body">
+
 	<div class="container">
+
 		<div id="weather" class="row">
 			Your Weather Template
-		</div>
-
-		<div id="quote" class="row">
-			The Quote
 		</div>
 
 		<div class="row">
 			<div class="col-12">
 				<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
 					<div class="form-group">
-						<label for="">TO DO LIST:</label>
-						<input type="text" name="description">
+						<label for="todo">TO DO LIST:</label>
+						<input type="text" name="description" class="form-control-lg">
 					</div>
 				</form>
-				<div id="todo" class="row"></div>
+				<div id="todo" class="row todo-cards"></div>
 			</div>
 		</div>
+
+		<div id="quote" class="row">
+			The Quote
+		</div>
+
 	</div>
 
 
