@@ -19,16 +19,20 @@
 		</div>
 
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 d-flex align-items-center justify-content-start d-flex d-inline-block">
 				<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
 					<div class="form-group">
-						<label for="todo">TO DO LIST:</label>
-						<input type="text" name="description" class="form-control-lg">
-						(<span id="todocount"></span>)
+						<label for="todo">
+							<h3 class="todo-list">
+								<em><strong>TO DO:</strong></em>
+							</h3>
+						</label>
+						<input type="text" name="description" class="form-control-lg todo-list">
+						<p><strong>Total ToDo's:</strong> <span id="todocount"></span></p>
 					</div>
 				</form>
-				<div id="todo" class="row todo-cards"></div>
 			</div>
+			<div id="todo" class="row todo-cards"></div>
 		</div>
 
 		<div id="quote" class="row quote">
@@ -36,7 +40,6 @@
 		</div>
 
 	</div>
-
 
 
 	<!--JS Libraries-->

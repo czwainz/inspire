@@ -17,7 +17,7 @@ function draw(todos) {
 	let todocount = 0
 	todos.forEach(todo => {
 		template += `
-		<div class="col-3">
+		<div class="col-3 my-2" style="width: 18rem;">
 			<div class="card">
 				<div class="card-body">
 					<h4 class="${todo.completed ? "strike-out" : ''}"> <input type="checkbox" ${todo.completed ? "checked" : ''} name="todo" id="${todo._id}" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')"> ${todo.description}</h4>
