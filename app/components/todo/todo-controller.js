@@ -14,6 +14,7 @@ function draw(todos) {
 	//WHAT IS MY PURPOSE?
 	//BUILD YOUR TODO TEMPLATE HERE
 	var template = ''
+	let todocount = 0
 	todos.forEach(todo => {
 		template += `
 		<div class="col-3">
@@ -25,8 +26,10 @@ function draw(todos) {
 			</div>
 		</div>
 		`
+		todocount++
 	});
 	document.getElementById('todo').innerHTML = template
+	document.getElementById('todocount').innerText = JSON.stringify(todocount)
 }
 
 export default class TodoController {

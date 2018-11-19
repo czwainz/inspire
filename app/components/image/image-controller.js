@@ -4,9 +4,11 @@ import ImageService from "./image-service.js"
 let is = new ImageService
 
 
-function drawImage(imgArr) {
-  let index = Math.floor(Math.random() * 41)
-  document.body.style.backgroundImage = `url(${imgArr[index].url})`
+function drawImage() {
+  let imageArr = is.images
+  let imageIndex = Math.floor(Math.random() * imageArr.length)
+  let image = imageArr[imageIndex]
+  document.body.style.backgroundImage = `url(${image.url})`
 }
 
 export default class ImageController {
