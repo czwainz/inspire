@@ -18,10 +18,7 @@ export default class QuoteController {
 
 	getQuote() {
 		qs.getQuote(_drawQuote)
-		// 	function (quote) {
-		// 		console.log('What is the quote', quote)
-		// 	}
-		// )
+
 
 	}
 }

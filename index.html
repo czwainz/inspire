@@ -7,6 +7,7 @@
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Antic+Slab|Coustard|Syncopate:700" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -14,7 +15,7 @@
 
 	<div class="container">
 
-		<div id="weather" class="row">
+		<div id="weather" class="row justify-content-end">
 			Your Weather Template
 		</div>
 
@@ -23,12 +24,12 @@
 				<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
 					<div class="form-group">
 						<label for="todo">
-							<h3 class="todo-list">
-								<em><strong>TO DO:</strong></em>
+							<h3 class="todo-list pt-4">
+								<strong>TO DO:</strong>
 							</h3>
 						</label>
-						<input type="text" name="description" class="form-control-lg todo-list">
-						<p><strong>Total ToDo's:</strong> <span id="todocount"></span></p>
+						<input type="text" name="description" class="form-control-lg todo-list no-border">
+						<p style="font-family: 'Antic Slab', serif;"><strong>Total ToDo's:</strong> <span id="todocount"></span></p>
 					</div>
 				</form>
 			</div>

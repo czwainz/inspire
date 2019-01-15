@@ -4,7 +4,7 @@ body{
 }
 
 .card   {
-  background: rgba(127, 141, 145, 0.536);
+  background: rgba(127, 141, 145, 0.77);
   box-shadow: 1px 3px 1px 3px; 
 }
 
@@ -24,12 +24,14 @@ body{
 }
 
 #quote {
-  font-family: cursive;
-  text-shadow: 0px 0px 3px whitesmoke;
+  font-family: 'Coustard', serif;
+  color: rgb(60, 60, 60);
+  text-shadow: 1px 1px 3px whitesmoke;
 }
 
 h3 {
-  font-size: 5rem;
+  font-size: 3rem;
+  font-family: 'Syncopate', sans-serif;
   display: flex;
   justify-content: center;
 }
@@ -38,9 +40,21 @@ h3 {
   text-shadow: 0px 0px 5px lightgray;
 }
 
+.form-control, .todo-list{
+background-color: rgba(127, 141, 145, 0);
+box-shadow: none;
+}
+
+.form-control, .no-border
+{
+  border: 0;
+  box-shadow: none;
+  border-bottom: 3px solid gray;
+}
+
 #todocount  {
   color: whitesmoke;
-  text-shadow: 0px 0px 3px black;
+  text-shadow: 1px 1px 3px black;
 }
 p {
   color: whitesmoke;
