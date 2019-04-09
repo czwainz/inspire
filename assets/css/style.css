@@ -1,6 +1,6 @@
 body{
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card   {
@@ -32,8 +32,8 @@ body{
 h3 {
   font-size: 3rem;
   font-family: 'Syncopate', sans-serif;
-  display: flex;
   justify-content: center;
+  display: flex;
 }
 
 .todo-list  {
